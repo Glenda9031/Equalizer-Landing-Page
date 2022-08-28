@@ -1,48 +1,90 @@
 /* ============ Global Styles ============= */
 
-html    {
-             font-size:       16px;
+html                    {
+                            font-size:                  16px;
 }
 
 *,
 ::before,
-::after {
-             box-sizing:      border-box;
-             margin:          0;
-             padding:         0;
+::after                 {
+                            box-sizing:                 border-box;
+                            margin:                     0;
+                            padding:                    0;
 }
 
-body    {
-            min-height:       100vh;
-            display:          flex;
-            justify-content:  center;
-            overflow-x:       hidden;
-            background-color: #fcfaf9;
-            font-family:      'Roberto', sans serif;
+body                    {
+                            min-height:                 100vh;
+                            display:                    flex;
+                            justify-content:            center;
+                            overflow-x:                 hidden;
+                            background-color:           #fcfaf9;
+                            font-family:                'Roberto', sans serif;
 }
 
 /* ============ Typography ============= */
 
-h1      {
-            font-weight:      900;
-            font-size:        40px;
-            line-height:      1.6;
-            letter-spacing:   .5rem;
-            margin-bottom:    28px;
+h1                      {
+                            font-weight:              900;
+                            font-size:                40px;
+                            line-height:              1.6;
+                            letter-spacing:           .5rem;
+                            margin-bottom:            28px;
 }
 
-h2      {
-            
+h2                      {
+                            font-size:                2rem;
+                            line-height:              1.8;
+                            font-weight:              700;
+                            color:                    #fcfaf9;
+                            margin-bottom:            .75rem;
 }
 
+.subtitle-paragraph     {
+                            font-size:               4rem;
+                            line-height:             2.2;
+                            letter-spacing:          -1px;
+                            margin-bottom:           2.1rem;
+                            color:                 #191826;
+}
+
+.primary-card-paragraph {
+                            font-size:              3rem;
+                            line-height:            1.8;
+                            color:                #fcfaf9;
+                            font-weight:            400;
+                            margin-bottom:          2rem;
+
+}
+
+.price                  {
+                            font-size:              3rem;
+                            font-weight:            700;
+                            line-height:            2.2;
+                            color:                #fcfaf9;
+                            margin-bottom:          2rem;
+}
+
+.price-light            {
+                            vertical-align:         middle;
+                            font-size:              1rem;
+                            font-weight:            400;
+                            letter-spacing:         -0.2px;
+                            color:                  #fcfaf9;
+}
+
+.copyright-statement    {
+                            font-size:              1rem;
+                            line-height:            1.5;
+                            color:                  #191826;
+}
 /* ============ Layout ============= */
 
-.container {
-    max-width:                575px;
-    display:                  flex;
-    flex-direction:           column;
-    position:                 relative;
-    align-items:              center;
-    padding:                  40px 0 80px 0;
+.container              {
+                            max-width:              575px;
+                            display:                flex;
+                            flex-direction:         column;
+                            position:               relative;
+                            align-items:            center;
+                            padding:                40px 0 80px 0;
 }
 
