@@ -1,4 +1,6 @@
-/* ============ Global Styles ============= */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+/* ============ Universal Styles ============= */
 
 html                    {
                             font-size:                  16px;
@@ -12,79 +14,142 @@ html                    {
                             padding:                    0;
 }
 
+
+:root                   {
+                            --soft-cyan:               #66e2dc;
+                            --soft-red:                #fa7453;
+                            --light-orange:            #ffb964;
+                            --light-gray:              #fcfaf9;
+                            --dark-black:              #191826;
+}
+
 body                    {
                             min-height:                 100vh;
                             display:                    flex;
                             justify-content:            center;
                             overflow-x:                 hidden;
                             background-color:           #fcfaf9;
-                            font-family:                'Roberto', sans serif;
+                            font-family:                'IBM Plex Sans', sans-serif;
 }
 
-/* ============ Typography ============= */
+/* ============ HEADER ============= */
+
+.container              {
+                            background-image:           url('../images/bg-main-desktop.png');
+                            background-repeat:          no-repeat;
+                            background-size:            cover;
+                            background-position:        center-top;
+                            max-width:                  1023px;
+                            display:                    flex;
+                            flex-direction:             column;
+                            position:                   relative;
+                            align-items:                center;
+                            padding:                    40px 0 80px 0;
+}
+
+.logo                   {
+                            width:                      147px;
+                            height:                     33px;
+                            margin:                     3rem 0 0 7rem;
+}
+
+.design                 {
+                            display:                    block;
+                            position:                   absolute;
+                            width:                      312px;
+                            height:                     468px;
+                            top:                        -40px;
+                            right:                      -110px;
+                            padding-right:              270px;
+                            padding-left:               12px;
+                            margin-bottom:              320px;
+}
 
 h1                      {
-                            font-weight:              900;
-                            font-size:                40px;
-                            line-height:              1.6;
-                            letter-spacing:           .5rem;
-                            margin-bottom:            28px;
-}
-
-h2                      {
-                            font-size:                2rem;
-                            line-height:              1.8;
-                            font-weight:              700;
-                            color:                    #fcfaf9;
-                            margin-bottom:            .75rem;
+                            font-family:                'IBM Plex Sans', sans-serif;
+                            font-weight:                700;
+                            font-size:                  50px;
+                            line-height:                1.3;
+                            letter-spacing:             .5rem;
+                            margin:                     12rem 0 0 7rem;
 }
 
 .subtitle-paragraph     {
-                            font-size:               4rem;
-                            line-height:             2.2;
-                            letter-spacing:          -1px;
-                            margin-bottom:           2.1rem;
-                            color:                 #191826;
+                            font-size:                  4rem;
+                            line-height:                2.2;
+                            letter-spacing:             -1px;
+                            margin-bottom:              2.1rem;
+                            color:                     #191826;
+}
+
+
+/* ============ MAIN ============= */
+
+.cell-phone             {
+                            width:                      312px;
+                            height:                     642px;
+                            margin-top:                 -12rem;
+                            margin-left:                4rem;
+}
+
+h2                      {
+                            font-size:                  2rem;
+                            line-height:                1.8;
+                            font-weight:                700;
+                            color:                     #fcfaf9;
+                            margin-bottom:               .75rem;
 }
 
 .primary-card-paragraph {
-                            font-size:              3rem;
-                            line-height:            1.8;
-                            color:                #fcfaf9;
-                            font-weight:            400;
-                            margin-bottom:          2rem;
+                            font-size:                   3rem;
+                            line-height:                 1.8;
+                            color:                      #fcfaf9;
+                            font-weight:                 400;
+                            margin-bottom:               2rem;
 
 }
 
 .price                  {
-                            font-size:              3rem;
-                            font-weight:            700;
-                            line-height:            2.2;
-                            color:                #fcfaf9;
-                            margin-bottom:          2rem;
+                            font-size:                   3rem;
+                            font-weight:                 700;
+                            line-height:                 2.2;
+                            color:                      #fcfaf9;
+                            margin-bottom:               2rem;
 }
 
 .price-light            {
-                            vertical-align:         middle;
-                            font-size:              1rem;
-                            font-weight:            400;
-                            letter-spacing:         -0.2px;
-                            color:                  #fcfaf9;
+                            vertical-align:              middle;
+                            font-size:                   1rem;
+                            font-weight:                 400;
+                            letter-spacing:              -0.2px;
+                            color:                      hsl(20, 40%, 48%);
 }
 
 .copyright-statement    {
-                            font-size:              1rem;
-                            line-height:            1.5;
-                            color:                  #191826;
+                            font-size:                   1rem;
+                            line-height:                 1.5;
+                            color:                      #191826;
 }
+
+.btn                    {
+                            font-weight:                 700;
+                            font-size:                   1.1rem;
+                            text-align:                  center;
+                            letter-spacing:              0.18px;
+}
+
+.btn:hover              {
+                            background-color:           #66e2dc;
+                            color:                      #000;
+                            width:                       333px;
+                            height:                      61px;
+                            border-radius:               10px;
+                            text-align:                  center;
+                            margin-bottom:               2rem;
+}
+
+/* ============ Images ============= */
+
+
+
 /* ============ Layout ============= */
-
-.container              {
-                            max-width:              575px;
-                            display:                flex;
-                            flex-direction:         column;
-                            position:               relative;
-                            align-items:            center;
-                            padding:                40px 0 80px 0;
-}
-
