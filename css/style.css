@@ -46,20 +46,6 @@ h1                      {
                             margin:                     12rem 0 1rem 7rem;
 }
 
-
-
-/*.header-pattern         {
-                            display:                    inline-block;
-                            position:                   relative;
-                            width:                      312px;
-                            height:                     468px;
-                            top:                        -40px;
-                            right:                      110px;
-                            padding-right:              270px;
-                            padding-left:               12px;
-                            margin-bottom:              320px;
-}*/
-
 p                       {
                             font-family:                'IBM Plex Sans', sans-serif;
                             font-size:                  20px;
@@ -68,7 +54,21 @@ p                       {
                             color:                     #191826;
 }
 
-/* ============ MAIN ============= */
+/* ============ MAIN - BLACK PART - ============= */
+
+.middle-row             {
+                            background-color:          #191826;
+                            background-image:           url('../images/bg-pattern-2.svg');
+                            background-repeat:          norepeat;
+                            background-position:        top center;
+                            width:                      1110px;
+                            height:                     600px;
+                            border-radius:              10px;
+                            display:                    flex;
+                            flex-direction:             row;
+                            justify-content:            space-around;
+                            margin:                     15rem 0 0 7rem;
+}
 
 .cell-phone             {
                             width:                      312px;
@@ -76,64 +76,81 @@ p                       {
                             margin-top:                 -12rem;
                             margin-left:                4rem;
 }
-.primary-card           {
+
+/* ============ MAIN - ORANGE PART - ============= */
+
+.premium-subtitle       {
                             background-color:           #fa7453;
                             border-radius:              10px;
                             width:                      446px;
+                            height:                     625px;
                             display:                    flex;
                             flex-direction:             column;
-                            justify-content:            center;  
+                            justify-content:            center;
+                            margin-top:                 4rem;
 }
+
 h2                      {
-                            font-size:                  2rem;
-                            line-height:                1.8;
-                            font-weight:                700;
+                            font-size:                  2.5rem;
                             color:                     #fcfaf9;
-                            margin:                      1rem;
+                            margin:                      1rem 0 0 4rem;
 }
 
 .primary-card-paragraph {
-                            font-size:                   .75rem;
-                            line-height:                 1.5;
+                            font-size:                   1.1rem;
+                            font-family:                'IBM Plex Sans', sans-serif;
                             color:                      #fcfaf9;
                             font-weight:                 400;
-                            margin:                      1rem;
+                            margin-left:                 4rem;
+                            line-height:                 1.2rem;
 
 }
 
 .price                  {
-                            font-size:                   3rem;
+                            font-family:                'IBM Plex Sans', sans-serif;
+                            font-size:                   1.1rem;
                             font-weight:                 700;
                             line-height:                 2.2;
-                            padding-left:                20px;
+                            margin-left:                 4rem;
                             color:                      #fcfaf9;
-                            margin-bottom:               2rem;
 }
 
 .price-light            {
                             vertical-align:              middle;
-                            font-size:                   1rem;
-                            font-weight:                 400;
-                            letter-spacing:              -0.2px;
-                            color:                      hsl(20, 40%, 48%);
+                            font-size:                   2rem;
+                            font-weight:                 600;
+                            color:                      #66e2dc;
 }
 
-.copyright-statement    {
-                            font-size:                   1rem;
-                            line-height:                 1.5;
-                            color:                      #191826;
+.premium-subtitle a     { 
+                            text-decoration:             none;
+                            margin-top:                  2rem;
+                            margin-left:                 4rem;
+                            padding-top:                 20px;
 }
 
-.btn                    {
-                            font-weight:                 700;
-                            font-size:                   1.1rem;
+.apple                  {
+                            background-color:           #191826;
+                            color:                      #fcfaf9;
+                            width:                       333px;
+                            height:                      61px;
+                            border-radius:               10px;
                             text-align:                  center;
-                            letter-spacing:              0.18px;
+                            margin-top:                  1rem;
 }
 
-.btn:hover              {
-                            background-color:           #66e2dc;
-                            color:                      #000;
+.ios-download           {
+                            margin:                      -1px 10px;
+}
+
+.apple:hover            {
+                           background-color:            #66e2dc;
+                           cursor:                       pointer;
+}
+
+.android                {
+                            background-color:           #fcfaf9;
+                            color:                      #191826;
                             width:                       333px;
                             height:                      61px;
                             border-radius:               10px;
@@ -141,8 +158,47 @@ h2                      {
                             margin-bottom:               2rem;
 }
 
-/* ============ Images ============= */
+.android-download       {
+                            margin:                      -1px 10px;
+}
 
+.android:hover          {
+                            background-color:            #ffb964;
+                            cursor:                        pointer;
+}
 
+/* ============ FOOTER ============= */
 
-/* ============ Layout ============= */
+footer                  {
+                            margin-top:                    9rem;
+}
+
+.footer-logo            {
+                            margin-top:                    1rem;
+}
+
+.copyright-statement    {
+                            margin-top:                    -0.3rem;
+                            margin-left:                   -5rem;                               
+}
+
+.footer-span            {
+                            color:                        #191826;
+                            font-weight:                   700;
+}
+
+.social-icons           {
+                            margin:                        0 10px;
+}
+
+.social-icons:hover     {
+                            color:                        #fcfaf9;
+                            cursor:                        pointer;
+}
+
+.link:hover            {
+                            background-color:             #fa7453;
+                            color:                        #fcfaf9;
+                            text-decoration:               none;
+                            cursor:                        pointer;
+}
